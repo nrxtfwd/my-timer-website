@@ -82,7 +82,7 @@ function updateTimers() {
 }
 
 function playAudio() {
-    const audio = new Audio('../sounds/alarm.mp3');
+    const audio = new Audio('https://github.com/nrxtfwd/my-timer-website/blob/main/sounds/alarm.mp3');
     audio.play();
 }
 
