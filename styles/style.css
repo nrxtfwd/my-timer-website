@@ -1,0 +1,102 @@
+body {
+    font-family: Arial;
+    font-size: 30px;
+    background-color: rgb(240,240,240);
+    margin: 0;
+    height: 100vh;
+}
+
+.settings-icon {
+    height: 50px;
+}
+
+/*
+.settings-button {
+    cursor: pointer;
+    margin: 20px;
+    background-color: grey;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.settings-button:hover {
+    background-color: rgb(104, 104, 104);
+}
+*/
+
+.sidebar {
+    position: fixed;
+    background-color: rgb(223, 223, 223);
+    height: 100%;
+    top: 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+}
+
+.duration-setting {
+    margin: 30px 10px 5px 10px;
+}
+
+.duration-setting p {
+    width: fit-content;
+    margin: 0;
+}
+
+.duration-setting input {
+    padding: 10px 10px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.main-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 85%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.timer-type {
+    font-size: 40px;
+    margin-bottom: 3px;
+}
+
+.timer {
+    font-size: 80px;
+    background-color: rgb(225,225,225);
+    padding: 15px 30px;
+    margin: 30px 0;
+    box-shadow: 5px 10px #888888;
+}
+
+.start-timer,
+.restart-timer {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 8px 50px;
+    cursor: pointer;
+}
+
+.restart-timer {
+    padding: 8px 20px;
+    border: 0;
+    background-color: rgb(248, 66, 66);
+    color: white;
+}
+
+.restart-timer:hover {
+    background-color: rgb(207, 59, 59);
+}

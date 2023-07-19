@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pomodoro?</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="duration-setting">
+                <p>Study Duration</p>
+                <input 
+                    class="js-study-duration-input"
+                    onkeydown="
+                        if (event.key == 'Enter') {
+                            updateTimers();
+                        }
+                    " 
+                    onblur="updateTimers();" 
+                    placeholder="Study time (in minutes)">
+            </div>
+            <div class="duration-setting">
+                <p>Break Duration</p>
+                <input 
+                    class="js-break-duration-input"
+                    onkeydown="
+                        if (event.key == 'Enter') {
+                            updateTimers();
+                        }
+                    " 
+                    onblur="updateTimers();"
+                    placeholder="Break time (in minutes)">
+            </div>
+        </div>
+
+        <main class="main-grid">
+            <p class="js-timer-type timer-type">STUDY</p>
+            <p class="js-timer timer">15:00</p>
+            <div>
+                <button class="js-start-timer start-timer" onclick="startTimer();">START</button>
+                <button class="js-restart-timer restart-timer" onclick="stopTimer(); restartTimer();">RESTART</button>
+            </div>
+        </main>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
