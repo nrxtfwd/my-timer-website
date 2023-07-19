@@ -1,5 +1,5 @@
 let timers = {
-    STUDY: 3,
+    STUDY: 900,
     BREAK: 600
 }
 let seconds = 15 * 60;
